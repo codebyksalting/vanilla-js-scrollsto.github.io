@@ -1,4 +1,17 @@
 /**
+ * Copyright © 2020 Kendrick Salting
+ * 
+ * Licensed under the MIT License
+ * 
+ * https://github.com/codebyksalting/vanilla-js-scrollthrough/blob/master/LICENSE
+ * 
+ * A short and simple permissive license with conditions 
+ * only requiring preservation of copyright and license notices. 
+ * Licensed works, modifications, and larger works 
+ * may be distributed under different terms and without source code.
+ */
+
+/**
  * Main smooth scroll function
  * 
  * @param string targetedElement Element to which the user will be scrolled to.
