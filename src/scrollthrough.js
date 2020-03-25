@@ -36,12 +36,12 @@ function scrollThrough(targetedElement, scrollSpeed) {
             var timeoutSpeed = 15;
     }
 
-    // Get the current scroll position and the target element's position on the document
-    var triggerPosition = window.scrollY;
+    // Get the current scroll position and the target element's position on the document - with support for IE11
+    var triggerPosition = window.scrollY || document.documentElement.scrollTop;
     var checkElement = document.querySelector(targetedElement);
     // Element should exist and must not be hidden
     if (checkElement && checkElement.offsetWidth > 0 && checkElement.offsetHeight > 0) {
-        var targetPosition = Math.floor(window.scrollY + checkElement.getBoundingClientRect().top);
+        var targetPosition = Math.floor(triggerPosition + checkElement.getBoundingClientRect().top);
     } else {
         var targetPosition = 0;
     }
