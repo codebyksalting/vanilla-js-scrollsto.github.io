@@ -79,13 +79,13 @@ function scrollThrough(targetedElement, scrollSpeed) {
 
 // Enable polyfill for all internal links
 document.addEventListener('DOMContentLoaded', function() {
-    var allLinks = document.querySelectorAll('a');
-    for (i=0; i<allLinks.length; i++ ) {
-        if (allLinks[i].hash) { 
-            allLinks[i].addEventListener('click', function(e){
+    var allLinks = Array.prototype.slice.call( document.querySelectorAll('a') );
+    allLinks.forEach(function(cur) {
+        if (cur.hash) {
+            cur.addEventListener('click', function(e){
                 e.preventDefault();
                 scrollThrough(this.hash);
             });
         }
-    }
+    });
 }, false);
