@@ -14,8 +14,8 @@
 /**
  * Main smooth scroll function
  * 
- * @param string targetedElement Element to which the user will be scrolled to.
- * @param string scrollSpeed The scrolling speed - fast, medium, or slow.
+ * @param {string} targetedElement Element to which the user will be scrolled to.
+ * @param {string} scrollSpeed The scrolling speed - fast, medium, or slow.
  */
 function scrollThrough(targetedElement, scrollSpeed) {
 
