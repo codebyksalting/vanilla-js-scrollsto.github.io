@@ -1,5 +1,5 @@
 /**
- * Copyright © 2020 Kendrick Salting
+ * Copyright © 2020 KSalting
  * 
  * Licensed under the MIT License
  * 
